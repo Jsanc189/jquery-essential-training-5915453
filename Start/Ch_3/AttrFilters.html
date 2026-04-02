@@ -9,15 +9,18 @@
         $("document").ready(function() {
             $("#btnRun").on("click", function() {
                 // Test to see if an attribute is present
-
+                $("p[class]").css("color", "blue");
                 
                 // Test to see if an attribute equals a specific value
-
+                $("p[id=para1]").css("color", "green");
                 
                 // Test to see if an attribute name starts with a specific string
-
+                $("p[id^=para]").css("border", "2px solid red");
                 
                 // Test more than one attribute value at a time
+                //finds paragraphs with an id that starts with "para" and a lang attribute that 
+                // contains "en-"
+                $("p[id^=para][lang*=en-]").css("border", "2px solid orange");
 
             }); 
         });
