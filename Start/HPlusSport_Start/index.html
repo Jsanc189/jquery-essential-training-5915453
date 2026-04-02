@@ -8,6 +8,14 @@
   <script src="../jquery-3.7.1.min.js"></script>
   <script>
     // Put your solution code in this script section
+    //select all <h2> elements with a data-type = mineral-water and make that element background color blue
+    $(function() {
+      $("#products h2.product-name[data-type='mineralwater']").css("background-color", "#0000FF");
+      $("#products h2.product-name[data-type='vitamin']").css("background-color", "#00FF00");
+      $("#products h2.product-name[data-type='proteinbar']").css("background-color", "#FF00FF");
+
+    });
+
   </script>
 </head>
 <body>
