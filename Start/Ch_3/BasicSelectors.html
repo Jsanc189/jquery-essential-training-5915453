@@ -9,15 +9,16 @@
         $("document").ready(function() {
             $("#btnRun").on("click", function() {
                 // Select all the <p> tags
-
+                $("p").css("color", "blue");
                     
                 // Select everything with style class ".a"
-
+                $(".a").css("color", "green");
                 
                 // Select an element with a specific ID
-
-                
+                $("#example").css("border", "2px solid red");
+  
                 // Select <p> tags with a class of ".b"
+                $("p.b").css("color", "orange");
 
             });
         });
