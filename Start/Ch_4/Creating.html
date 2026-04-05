@@ -22,19 +22,23 @@
             //alert($("#example").html());
 
             // use the html() function to change the content of the div
-
+            //$("#example").html("<p>Hi There!</p>");
             
             // create a new <p> and set the content of para1 to it
-
+            let newItem = $("<p>This is a new paragraph</p>");
+            $("#para1").html(newItem);
             }
         
         function changeContent() {
             // set the text content of the last paragraph
-
+            $("p:last").text(
+                "I've changed the last paragraph's text content"
+            )
         }
         
         function changeAllTheContent() {
             // Change the content of multiple tags at once
+            $("#example p").html("I've changed all the paragraphs!");
 
         }
     </script>
