@@ -9,12 +9,22 @@
         $("document").ready(function() {
             $("#btnRun").on("click", () => {
                 // Wrap HTML content around elements in the page
-
+                //wraps all the individual items (paragraphs here) in a div with the specified style
+                //$("#example p").wrap("<div style='color: red'/>");
+                //wraps all paragraphs into a single div
+                $("#example p").wrapAll("<div style='color: blue'/>");
                 
                 // Remove content from the page
+                //$("#example").empty();
+                //$("#example p.a, #example p.b").remove();
+                //$("#example p.a, #example p.b").detach();
 
                 
                 // Replace content within the page
+                //$("<div>replaced</div>").replaceAll("#example p[id]");
+                $("#example p[id]").replaceWith("<div>replaced with</div>");
+                $("#example p").replaceWith(replacementFn);
+                
 
             });
         });
